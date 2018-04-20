@@ -2,9 +2,15 @@
 <html>
 	<head>
 		<title>Lyuben's HTML Tutorial</title>
+		<script>
+			function change(){
+				document.getElementById("pic").setAttribute("src", "pics/change.jpg");
+			}
+		</script>
 	</head>
 	<body>
 		<h1>This is a monkey!</h1>
-		<img src="pics/monkey.jpg" width="500" height="300" />
+		<img id="pic" src="pics/monkey.jpg" width="500" height="300" />
+		<button onclick="change()">change</button>
 	<body>
 </html>
